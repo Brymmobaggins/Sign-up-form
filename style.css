@@ -2,7 +2,8 @@
   box-sizing: border-box;
 }
 body {
-  background-color: #f0fff0;
+  background-color: #b294c4;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -57,13 +58,17 @@ body {
   bottom: 0;
   /* display: block; */
 }
-.form-control.success i .fa-check-circle {
+.form-control.success i.fa-check-circle {
   visibility: visible;
   color: #2ecc71;
 }
 .form-control.error i.fa-exclamation-circle {
   visibility: visible;
   color: #e74e36;
+}
+.form-control.error small {
+  color: #e74e36;
+  visibility: visible;
 }
 
 .form-control small {
@@ -83,4 +88,9 @@ button {
   display: block;
   border-radius: 5px;
   font-family: inherit;
+  letter-spacing: 1px;
+}
+button:hover,:focus{
+  opacity: 0.8;
+  cursor:pointer;
 }
