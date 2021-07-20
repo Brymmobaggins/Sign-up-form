@@ -32,9 +32,9 @@ function checkInputs() {
     } else {
         setSuccessFor(password)
     }
-    if (passwordValue <= 7) {
-        setErrorFor(password, 'password is too short')
-    }
+    // if (passwordValue = 7) {
+    //     setErrorFor(password, 'password is too short')
+    // }
     if (password2Value === "") {
         setErrorFor(password2, "password cannot be blank")
     } else if (passwordValue !== password2Value) {
