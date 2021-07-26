@@ -2,8 +2,8 @@
   box-sizing: border-box;
 }
 body {
-  background-color: #b294c4;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #b294c4;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -11,7 +11,7 @@ body {
   margin: 0;
 }
 .container {
-  background-color: white;
+  background-color: #fff;
   width: 400px;
   max-width: 100%;
   border-radius: 5px;
@@ -91,7 +91,8 @@ button {
   font-family: inherit;
   letter-spacing: 1px;
 }
-button:hover,:focus{
+button:hover,
+:focus {
   opacity: 0.8;
-  cursor:pointer;
+  cursor: pointer;
 }
