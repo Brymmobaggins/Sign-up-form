@@ -9,33 +9,34 @@ form.addEventListener('submit', (e) => {
     checkInputs();
 
 });
+// function to check input
 function checkInputs() {
     const usernameValue = username.value.trim();
     const emailValue = email.value.trim();
     const passwordValue = password.value.trim();
     const password2Value = password2.value.trim();
 
-    if (usernameValue === "") {                    // for username value
+    if (usernameValue === "") {                    // username value
         setErrorFor(username, "username cannot be blank")
     } else {
         setSuccessFor(username)
     }
-    if (emailValue === "") {                     // for email value
+    if (emailValue === "") {                     // email value
         setErrorFor(email, 'email cannot be blank')
     } else {
         setSuccessFor(email)
     }
-    if (passwordValue === "") {                 // for password value
+    if (passwordValue === "") {                 //  password value
         setErrorFor(password, 'password cannot be blank')
     } else if
-        (passwordValue.length <= 7) {                 // for password length 
-        setErrorFor(password, 'password is too short')       
+        (passwordValue.length <= 7) {                 //  password length 
+        setErrorFor(password, 'password is too short')
     } else {
         setSuccessFor(password)
     }
-    if (password2Value === "") {                       // for password two value confirmation
+    if (password2Value === "") {                       //  password two value confirmation
         setErrorFor(password2, "password cannot be blank")
-    } else if (passwordValue !== password2Value) {        // for password comfirmation
+    } else if (passwordValue !== password2Value) {        // password comfirmation
         setErrorFor(password2, "password does not match")
     }
 }
@@ -54,7 +55,3 @@ function setSuccessFor(input) {
     formControl.className = 'form-control success';
 
 };
-// function isValidEmail(email) {
-//     const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-//     return re.test(String(email).toLowerCase())
-// };
