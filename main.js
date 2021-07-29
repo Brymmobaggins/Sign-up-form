@@ -34,9 +34,9 @@ function checkInputs() {
     } else {
         setSuccessFor(password)
     }
-    if (password2Value === "") {                       //  password two value confirmation
+    if (password2Value === "") {                       //  password check & validation
         setErrorFor(password2, "password cannot be blank")
-    } else if (passwordValue !== password2Value) {        // password comfirmation
+    } else if (passwordValue !== password2Value) {        // password matches
         setErrorFor(password2, "password does not match")
     }
 }
